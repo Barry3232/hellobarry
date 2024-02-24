@@ -1,39 +1,15 @@
 import 'dart:io';
 
-void main() {
-  print('please enter a number');
-  String? number = stdin.readLineSync();
-  if (number != null) {
-    print('please choose one of this sign +,_,*');
-    String? sign = stdin.readLineSync();
-    if (sign != null) {
-      if (sign == '+') {
-        print('Please enter a second number');
-        String? secondNumber = stdin.readLineSync();
-        if (secondNumber != null) {
-          int first = int.parse(number);
-          int second = int.parse(secondNumber);
-
-          int answerPlus = first + second;
-
-          print('Your answer is $answerPlus');
-        }
-      } else if (sign == '-') {
-        print('Please enter a second number');
-        String? secondNumber = stdin.readLineSync();
-        if (secondNumber != null) {
-          int first = int.parse(number);
-          int second = int.parse(secondNumber);
-
-          int answerMinus = first - second;
-
-          print('Your answer is $answerMinus');
-        }
-      }else {
-        print('we do not know that function');
+void main(){
+  print('pls enter your email');
+  String? email = stdin.readLineSync();
+  if (email != null) {
+    print('please what action to take next open mail, read mail, log out of mail');
+    String? action = stdin.readLineSync();
+    if (action != null) {
+      if (action == 'open mail') {
+        print('mail is been opened');
       }
     }
   }
 }
-
-
