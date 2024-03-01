@@ -1,36 +1,42 @@
 void main(){
 
-  // helloBarryShirt
-  // okay jllk;pl
-  const r = 12;
-  var d = 23;
-  int c = 15;
+  // Switch statements
 
-  String dave = 'boom';
-  bool red = false;
-  double g = 4.03;
+  String hey = 'hey';
+  switch(hey) {
+    case 'hi': {
+      print('Nice try');
+    }
+    // statements
+      break;
+    case 'we': {
+      print('Wrong guy');
+    }
+    // statements
+      break;
+    case 'hejy': {
+      print('Yes it is a match');
+    }
+    // statements
+      break;
+    default: {
+      print('Noithing');
+    }
+    // default statements
+  }
 
-
-  List<int> yes = [1,2,3];
-
-  print(yes);
-
-  List<String> letam = ['dear','him','her'];
-  print(letam);
-
-  List <String> jennifer = ['love','she','heat'];
-  print (jennifer);
-
-  List<bool> wrong = [true,false];
-  print(wrong);
-
-  List<bool> james = [false, true];
-  print(james);
-
-  List<double> david = [3.4,4.3,6.60];
-  print(david);
-
+  var dayOfWeek = 'Monday';
+  var dayNumber = switch (dayOfWeek) {
+    'Monday' => 1,
+    'Tuesday' => 2,
+    'Wednesday' => 3,
+    'Thursday' => 4,
+    'Friday' => 5,
+    'Saturday' => 6,
+    'Sunday' => 7,
+    _ => 10, //Default value
+  };
+  print(dayNumber);
 
 }
-
 
